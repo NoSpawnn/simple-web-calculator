@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(#B1E1FF, #AFB4FF);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.calculator {
+    padding: 25px;
+    align-items: center;
+    border-radius: .5rem;
+    background-color: #B1E1FF;
+    background-image: linear-gradient(#9c9efe, #A66CFF);
+    box-shadow: 0 0 2rem 10px rgba(0, 0, 0, 0.2);
+}
+
+.calc-screen {
+    text-align: right;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    background-color: inherit;
+    box-shadow: 0 0 .7rem .2rem rgba(0, 0, 0, 0.1);
+}
+
+.calc-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.button-row {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.button-row button {
+    background-color: #B1E1FF;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 .7rem .2rem rgba(0, 0, 0, 0.1);
+}
+
+.button-row button:active {
+    background-color: inherit;
+}
+
+@media screen and (min-width: 1920px) {
+    .calculator {
+        transform: scale(2);
+    }
+    
+}
